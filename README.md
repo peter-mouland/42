@@ -32,3 +32,4 @@ knowledge, if you already know it then no harm in a refresher.
 * Credo/ethics - what we expect of you as developers
 * Static code analysis
 * Fuzzing
+* Load testing, why bother and how if i actually cared?
