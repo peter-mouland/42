@@ -29,3 +29,4 @@ knowledge, if you already know it then no harm in a refresher.
 * Docker
 * Easy setup - it is not ok to ask me to follow a 100 step process to compile
   your code.
+* Credo/ethics - what we expect of you as developers
