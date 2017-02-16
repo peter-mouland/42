@@ -33,4 +33,4 @@ knowledge, if you already know it then no harm in a refresher.
 * Static code analysis
 * Fuzzing
 * Load testing, why bother and how if i actually cared?
-* Understanding why 20% time indirectly benefits the company - esp for JC
+* Understanding why 20% time benefits the company - esp for JC. No you don't have to be Google. Stop trying to make it directly related to business. Ditto hack days
