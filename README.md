@@ -33,3 +33,4 @@ knowledge, if you already know it then no harm in a refresher.
 * Static code analysis
 * Fuzzing
 * Load testing, why bother and how if i actually cared?
+* Understanding why 20% time indirectly benefits the company - esp for JC
