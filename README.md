@@ -111,7 +111,7 @@ This session explains the common patterns used in microservice development inclu
 What does it mean to be Agile? First we will take a look at the why the agile manefesto was set out and some of the common forms of Agile such as Scrum and Kanban.  Once we understand why we will look at how you can implement agile thinking into your everyday workflow.  
 *Nic Jackson - Chris Caswell*
 
-### 16 :: Breaking down the monolith
+#### 16 :: Breaking down the monolith
 Microservices patterns are awesome however we rarely find that we can develop on green-field applications and often face the trouble of integrating into an existing system.  This talk will teach you the principles of how to identify a seam to remove code from a monolith into a service as well as looking at how new functionaliy based in a microservice can be implemented.  
 *TBD*
 
