@@ -50,7 +50,7 @@ knowledge, if you already know it then no harm in a refresher.
 ### Talks
 
 #### 01 :: Managing upwards - Finding the balance between quality and delivery  
-*Dan Night*
+*Dan Knight*
 
 #### 02 :: 23 Essential design patterns you will mostly never use
 A look at the most common design patterns from the Gang of 4 design patterns book, summary of the most useful.  
