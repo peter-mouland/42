@@ -47,33 +47,37 @@ knowledge, if you already know it then no harm in a refresher.
 
 ### Talks
 
-#### 01 :: Managing upwards - Finding the balance between quality and delivery
+#### 01 :: Managing upwards - Finding the balance between quality and delivery  
 *Dan Night*
 
 #### 02 :: 23 Essential design patterns you will mostly never use
-A look at the most common design patterns from the Gang of 4 design patterns book, summary of the most useful.
+A look at the most common design patterns from the Gang of 4 design patterns book, summary of the most useful.  
 *Jon Lim, Nic Jackson*
 
 #### 03 :: Naming conventions and clean code
-How code should read like a novel, a retrospective analysis of Bob Martins seminal work.
+How code should read like a novel, a retrospective analysis of Bob Martins seminal work.  
 *Jon Lim*
 
 #### 04 :: Web 101, Critical render path, speed and performance
-How the web browser works and the importance of order when creating web frontends.
+How the web browser works and the importance of order when creating web frontends.  
 *Rob Jones*
 
 #### 05 :: Full circle quality
-Unit tests are not enough, in this session we will learn how to write good unit, integration, behavioural tests.  We will also look at how to implement service virtualisation to remove dependency.
+Unit tests are not enough, in this session we will learn how to write good unit, integration, behavioural tests.  We will also look at how to implement service virtualisation to remove dependency.  
 *Nic Jackson*
 
 #### 06 :: All clients are idiots, or are they - Understanding others problems?
-The primary objective of Agile "Everyone is doing the best they can", yet we often dismiss this becoming agitated and anoyed at the actions of others.  This session will teach how you can communicate to both your stake holders and within your team.
+The primary objective of Agile "Everyone is doing the best they can", yet we often dismiss this becoming agitated and anoyed at the actions of others.  This session will teach how you can communicate to both your stake holders and within your team.  
 *Dan Knight*
 -- should this be merged into 01
 
 #### 07 :: Container orchestration
-To be announced
+To be announced  
 *Michael Hausenblas - Mesosphere*
+
+#### 08 :: Package Oriented Design
+You have learned the language and now you are ready to start building your product. Sounds easy but where do you begin? Go is not like other languages in the sense that you can’t organize your source code using folders. If you do, you are going to have problems. This is because each folder in your source tree represents a package. A self contained unit of compiled code. The better job you do in identifying the unique packages you need to solve the problem, the easier your projects will be to manage, support and grow over time. Developer productivity on the project will directly relate to how well you design your packages and their API. This has been my experience and this is what I will share with you in this talk. My best practices and guidelines to package oriented design.  
+*William Kennedy - Arden Labs - Author of Go in Action*
 
 #### 23 :: Afterparty
 Drinks in the shaftsbury
