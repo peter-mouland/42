@@ -11,42 +11,41 @@ knowledge, if you already know it then no harm in a refresher.
 [https://docs.google.com/spreadsheets/d/1-A4P29n5u_iYqExKBZoyZKW61sa0wr9i935lg80HR_I](https://docs.google.com/spreadsheets/d/1-A4P29n5u_iYqExKBZoyZKW61sa0wr9i935lg80HR_I)
 
 ## TODO
-* Schedule
-* Rooms
-* T-Shirts
+* Schedule - Started google doc
+* Rooms - Meeting with Michael and Sara Tuesday
+* T-Shirts - Design complete
 * Stickers
-* Organise recording facilities
+* Organise recording facilities - Hangouts live?
 
 ### Topics
 * Managing upwards - Finding the balance between quality and delivery (DK) [x] 01
 * Microservices - Why?
 * All clients are idiots, or are they - Understanding others problems? [x] 06
-* Solid and why it matters
 * Breaking out a service
 * 23 Essential design patterns you will mostly never use [x] 02
 * Naming conventions and clean code [x] 03
-* Web 101, Critical render path, speed and performance [x] 
-* Coding standards [x]
-* Full circle quality
+* Coding standards [x] 03
+* Refactoring [x] 03
+* Solid and why it matters [x] 03
+* Web 101, Critical render path, speed and performance [x] 04
 * Application Lifecycle management
-* Secure application development
+* Full circle quality [x] 05
+* Secure application development [x] 09
+* Static code analysis [x] 09
+* Fuzzing [x] 09
 * Agile 101
-* Soft skills
-* Refactoring
 * Architectural patterns
 * How to succeede as a software engineer 
+* Soft skills
 * Docker [x] 07
 * Easy setup - it is not ok to ask me to follow a 100 step process to compile
-  your code.
+  your code. [x] 11
 * Credo/ethics - what we expect of you as developers
-* Static code analysis
-* Fuzzing
-* Load testing, why bother and how if i actually cared?
-* Understanding why 20% time benefits the company - esp for JC. No you don't have to be Google. Stop trying to make it directly related to business. Ditto hack days
--- Reword to how you use your time effectively to ensure personal and corporate technical progression?
+* Load testing, why bother and how if i actually cared? [x] 12
+* How you use your time effectively to ensure personal and corporate technical progression?
 * Managing your own time
 * A tool does not make you agile
-* Community - Why you should get involved
+* Community - Why you should get involved [x] 10
 
 ### Talks
 
@@ -81,6 +80,22 @@ To be announced
 #### 08 :: Package Oriented Design
 You have learned the language and now you are ready to start building your product. Sounds easy but where do you begin? Go is not like other languages in the sense that you can’t organize your source code using folders. If you do, you are going to have problems. This is because each folder in your source tree represents a package. A self contained unit of compiled code. The better job you do in identifying the unique packages you need to solve the problem, the easier your projects will be to manage, support and grow over time. Developer productivity on the project will directly relate to how well you design your packages and their API. This has been my experience and this is what I will share with you in this talk. My best practices and guidelines to package oriented design.  
 *William Kennedy - Arden Labs - Author of Go in Action*
+
+#### 09 :: Practical Application Security
+Covering topics such as secure application development, XSS, XRSF, Fuzzing and static code analysis.  
+*Andrew Millar*
+
+#### 10 :: Community Matters
+In this talk you will learn why you should get involved with the community and teach others to code.  
+*Eggy*
+
+#### 11 :: Easy setup - it is not ok to ask me to follow a 100 step process to compile your code
+Why it is important to make your project easy to setup, in this talk you will learn some practical advice how you can use docker to create reproducable builds.
+*David Kelly*
+
+#### 12 :: Load testing - Why bother and how if i actually cared?
+This talk covers why load testing is important how often you should do it and a short tutorial on how to do it and what those charts actually mean.  
+*Paul Robbinson*
 
 #### 23 :: Afterparty
 Drinks in the shaftsbury
