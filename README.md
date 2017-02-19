@@ -7,6 +7,9 @@ that can help us write great software and deliver excellent service to our
 internal clients.  These short sessions are designed to equip you with that
 knowledge, if you already know it then no harm in a refresher.
 
+## Schedule
+[https://docs.google.com/spreadsheets/d/1-A4P29n5u_iYqExKBZoyZKW61sa0wr9i935lg80HR_I](https://docs.google.com/spreadsheets/d/1-A4P29n5u_iYqExKBZoyZKW61sa0wr9i935lg80HR_I)
+
 ## TODO
 * Schedule
 * Rooms
