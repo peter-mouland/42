@@ -19,9 +19,12 @@ knowledge, if you already know it then no harm in a refresher.
 
 ### Topics
 * Managing upwards - Finding the balance between quality and delivery (DK) [x] 01
-* Microservices - Why?
+* Microservices - Why? [x] 14
+* Architectural patterns [x] 14
+* Aysncronous workflow [x] 14
 * All clients are idiots, or are they - Understanding others problems? [x] 06
-* Breaking out a service
+* Soft skills [x] 06
+* Breaking out a service [x] 16
 * 23 Essential design patterns you will mostly never use [x] 02
 * Naming conventions and clean code [x] 03
 * Coding standards [x] 03
@@ -33,18 +36,16 @@ knowledge, if you already know it then no harm in a refresher.
 * Secure application development [x] 09
 * Static code analysis [x] 09
 * Fuzzing [x] 09
-* Agile 101
-* Architectural patterns
+* Agile 101 [x] 15
+* A tool does not make you agile [x] 15
 * How to succeede as a software engineer 
-* Soft skills
 * Docker [x] 07
 * Easy setup - it is not ok to ask me to follow a 100 step process to compile
   your code. [x] 11
-* Credo/ethics - what we expect of you as developers
 * Load testing, why bother and how if i actually cared? [x] 12
 * How you use your time effectively to ensure personal and corporate technical progression?
 * Managing your own time
-* A tool does not make you agile
+* Credo/ethics - what we expect of you as developers
 * Community - Why you should get involved [x] 10
 * Serverless - AWS Lambda [x] 13
 
@@ -96,11 +97,23 @@ Why it is important to make your project easy to setup, in this talk you will le
 
 #### 12 :: Load testing - Why bother and how if i actually cared?
 This talk covers why load testing is important how often you should do it and a short tutorial on how to do it and what those charts actually mean.  
-*Paul Robbinson*
+*Paul Robinson*
 
 #### 13 :: Serverless
 To be announced.  
-*Danilo Poccia - Author of AWS Lambda in Action, Technical evangelist at Amazon*. 
+*Danilo Poccia - Author of AWS Lambda in Action, Technical evangelist at Amazon*
+
+#### 14 :: Architecural patterns for microservice development
+This session explains the common patterns used in microservice development including asyncronous processing and event driven systems.  We will understand why Microservices has come into existence by examining some of the problems of the past
+*Jonathan Coltman*
+
+#### 15 :: Agile 101
+What does it mean to be Agile? First we will take a look at the why the agile manefesto was set out and some of the common forms of Agile such as Scrum and Kanban.  Once we understand why we will look at how you can implement agile thinking into your everyday workflow.  
+*Nic Jackson - Chris Caswell*
+
+### 16 :: Breaking down the monolith
+Microservices patterns are awesome however we rarely find that we can develop on green-field applications and often face the trouble of integrating into an existing system.  This talk will teach you the principles of how to identify a seam to remove code from a monolith into a service as well as looking at how new functionaliy based in a microservice can be implemented.  
+*TBD*
 
 #### 23 :: Afterparty
 Drinks in the Shaftsbury
