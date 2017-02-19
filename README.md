@@ -7,6 +7,13 @@ that can help us write great software and deliver excellent service to our
 internal clients.  These short sessions are designed to equip you with that
 knowledge, if you already know it then no harm in a refresher.
 
+## TODO
+* Schedule
+* Rooms
+* T-Shirts
+* Stickers
+* Organise recording facilities
+
 ### Topics
 * Managing upwards - Finding the balance between quality and delivery (DK) [x] 01
 * Microservices - Why?
@@ -36,6 +43,7 @@ knowledge, if you already know it then no harm in a refresher.
 -- Reword to how you use your time effectively to ensure personal and corporate technical progression?
 * Managing your own time
 * A tool does not make you agile
+* Community - Why you should get involved
 
 ### Talks
 
@@ -66,3 +74,6 @@ The primary objective of Agile "Everyone is doing the best they can", yet we oft
 #### 07 :: Container orchestration
 To be announced
 *Michael Hausenblas - Mesosphere*
+
+#### 23 :: Afterparty
+Drinks in the shaftsbury
