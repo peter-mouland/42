@@ -46,6 +46,7 @@ knowledge, if you already know it then no harm in a refresher.
 * Managing your own time
 * A tool does not make you agile
 * Community - Why you should get involved [x] 10
+* Serverless - AWS Lambda [x] 13
 
 ### Talks
 
@@ -74,7 +75,7 @@ The primary objective of Agile "Everyone is doing the best they can", yet we oft
 -- should this be merged into 01
 
 #### 07 :: Container orchestration
-To be announced  
+To be announced.  
 *Michael Hausenblas - Mesosphere*
 
 #### 08 :: Package Oriented Design
@@ -90,12 +91,16 @@ In this talk you will learn why you should get involved with the community and t
 *Eggy*
 
 #### 11 :: Easy setup - it is not ok to ask me to follow a 100 step process to compile your code
-Why it is important to make your project easy to setup, in this talk you will learn some practical advice how you can use docker to create reproducable builds.
+Why it is important to make your project easy to setup, in this talk you will learn some practical advice how you can use docker to create reproducable builds.  
 *David Kelly*
 
 #### 12 :: Load testing - Why bother and how if i actually cared?
 This talk covers why load testing is important how often you should do it and a short tutorial on how to do it and what those charts actually mean.  
 *Paul Robbinson*
 
+#### 13 :: Serverless
+To be announced.  
+*Danilo Poccia - Author of AWS Lambda in Action, Technical evangelist at Amazon*. 
+
 #### 23 :: Afterparty
-Drinks in the shaftsbury
+Drinks in the Shaftsbury
