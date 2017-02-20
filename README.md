@@ -123,5 +123,9 @@ Microservices patterns are awesome however we rarely find that we can develop on
 A look at how we can use FaaS + Aggregate data stores, and event sourcing patterns.  
 *Paul Robinson*
 
+#### 101 :: Classical Grounding
+What things does Jon think you should have an understanding of
+*Jon Lim*
+
 #### 23 :: Afterparty
 Drinks in the Shaftsbury
