@@ -41,10 +41,10 @@ Software is hard but is need not be that way there are but a few core things tha
 *   Load testing, why bother and how if i actually cared? [x] 12
 *   Community - Why you should get involved [x] 10
 *   Serverless - AWS Lambda [x] 13
-*   How to succeed as a software engineer
-*   How you use your time effectively to ensure personal and corporate technical progression?
-*   Managing your own time
-*   Credo/ethics - what we expect of you as developers
+*   How to succeed as a software engineer [x]
+*   How you use your time effectively to ensure personal and corporate technical progression? [x]
+*   Managing your own time [x]
+*   Credo/ethics - what we expect of you as developers [x] 19
 *   How to make things simpler. 
 *   How to make software more comprehensible.
 *   How to make entire systems easily navigable.
@@ -126,6 +126,14 @@ A look at how we can use FaaS + Aggregate data stores, and event sourcing patter
 #### 18 :: All The 3D Maths You Will Ever Need
 3D maths may look scary. But it's not. This talk will take you from the simplest possible building blocks to just about enough knowledge to build your own 3D pipeline. Give or take a bit.
 *Tony Green*
+
+#### 19 :: Ethically Driven Development
+To quote the President of Starfleet: "Just because you can do a thing, it does not mean that you should do that thing."
+*Rob Stearn*
+
+#### 20 :: The Corporation of You, managing being managed as a developer
+Management doesn't start above you, it starts with you. How you manage yourself is the only way you'll move forward. 
+*Rob Stearn*
 
 #### 101 :: Classical Grounding
 What things does Jon think you should have an understanding of
