@@ -50,7 +50,7 @@ Software is hard but is need not be that way there are but a few core things tha
 *   How to make entire systems easily navigable.
 *   Making software better by having only ultra fast tests.
 *   Writing rigorous contract tests.
-*   Event driven development
+*   Event driven development [x] 17
 
 
 ### Talks
@@ -118,6 +118,10 @@ What does it mean to be Agile? First we will take a look at the why the agile ma
 #### 16 :: Breaking down the monolith
 Microservices patterns are awesome however we rarely find that we can develop on green-field applications and often face the trouble of integrating into an existing system.  This talk will teach you the principles of how to identify a seam to remove code from a monolith into a service as well as looking at how new functionality based in a microservice can be implemented.  
 *Jon Lim, Mazin Power*
+
+#### 17 :: Event Driven development
+A look at how we can use FaaS + Aggregate data stores, and event sourcing patterns.  
+*Paul Robinson*
 
 #### 23 :: Afterparty
 Drinks in the Shaftsbury
