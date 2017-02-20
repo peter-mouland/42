@@ -123,6 +123,10 @@ Microservices patterns are awesome however we rarely find that we can develop on
 A look at how we can use FaaS + Aggregate data stores, and event sourcing patterns.  
 *Paul Robinson*
 
+#### 18 :: All The 3D Maths You Will Ever Need
+3D maths may look scary. But it's not. This talk will take you from the simplest possible building blocks to just about enough knowledge to build your own 3D pipeline. Give or take a bit.
+*Tony Green*
+
 #### 101 :: Classical Grounding
 What things does Jon think you should have an understanding of
 *Jon Lim*
