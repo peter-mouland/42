@@ -44,12 +44,19 @@ Software is hard but is need not be that way there are but a few core things tha
 *   How you use your time effectively to ensure personal and corporate technical progression?
 *   Managing your own time
 *   Credo/ethics - what we expect of you as developers
-*   How to make things simpler. 
+*   How to make things simpler.
 *   How to make software more comprehensible.
 *   How to make entire systems easily navigable.
-*   Making software better by having only ultra fast tests.
+*   Making software better by having only ultra fast tests. [x] 18
 *   Writing rigorous contract tests.
 *   Event driven development [x] 17
+*   Accessibility in programming [x] 19
+
+### Tracks
+*   General
+*   Soft skills
+*   Software craftsmanship
+*   Architecture
 
 ### Talks
 
@@ -91,7 +98,7 @@ Covering topics such as secure application development, XSS, XRSF, Fuzzing and s
 
 #### 10 :: Community Matters
 In this talk you will learn why you should get involved with the community and teach others to code.  
-*Eggy*
+*Eggya Chiquita*
 
 #### 11 :: Easy setup - it is not ok to ask me to follow a 100 step process to compile your code
 Why it is important to make your project easy to setup, in this talk you will learn some practical advice how you can use docker to create reproducible builds.  
@@ -121,9 +128,13 @@ Microservices patterns are awesome however we rarely find that we can develop on
 A look at how we can use FaaS + Aggregate data stores, and event sourcing patterns.  
 *Paul Robinson*
 
-#### 17 :: Event Driven development
+#### 18 :: Making software better by having only ultra fast tests.
+Why you need fast tests and how to write them.  
+*Bernat Rafales*
 
-*Paul Robinson*
+#### 19 :: Accessibility
+
+*Sally Shepherd - Apple, MostGood software*
 
 #### 23 :: Afterparty
 Drinks in the Shaftsbury
