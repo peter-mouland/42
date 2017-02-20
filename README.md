@@ -105,7 +105,7 @@ To be announced.
 *Danilo Poccia - Author of AWS Lambda in Action, Technical evangelist at Amazon*
 
 #### 14 :: Architectural patterns for microservice development
-This session explains the common patterns used in microservice development including asynchronous processing and event driven systems.  We will understand why Microservices has come into existence by examining some of the problems of the past.  
+This session explains the common patterns used in microservice development including asynchronous processing and event driven systems.  We will understand why Microservices has come into existence by examining some of the problems of the past.   
 *Jonathan Coltman*
 
 #### 15 :: Agile 101
