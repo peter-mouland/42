@@ -3,7 +3,7 @@
 The answer to life, the universe, and everything.
 
 ## A short course on writing great software
-Software is hard but is need not be that way there are but a few core things that can help us write great software and deliver excellent service to our internal clients.  These short sessions are designed to equip you with that knowledge, if you already know it then no harm in a refresher.
+Software is hard but is need not be that way there are but a few core things that can help us write great software and deliver excellent service to our internal clients.  These short sessions are designed to equip you with that knowledge, if you already know it then no harm in a refresher.  Each talk will be 40 minutes with 20 minutes allowed for Q&A.
 
 ## Schedule
 [https://docs.google.com/spreadsheets/d/1-A4P29n5u_iYqExKBZoyZKW61sa0wr9i935lg80HR_I](https://docs.google.com/spreadsheets/d/1-A4P29n5u_iYqExKBZoyZKW61sa0wr9i935lg80HR_I)
@@ -49,6 +49,8 @@ Software is hard but is need not be that way there are but a few core things tha
 *   How to make entire systems easily navigable.
 *   Making software better by having only ultra fast tests.
 *   Writing rigorous contract tests.
+*   Event driven development
+
 
 ### Talks
 
@@ -64,7 +66,7 @@ How code should read like a novel, a retrospective analysis of Bob Martins semin
 *Jon Lim*
 
 #### 04 :: Web 101, Critical render path, speed and performance
-How the web browser works and the importance of order when creating web front-ends.  
+How the web browser works and the importance of order when creating web front-ends.  How to integrate content when using a CDN.
 *Rob Jones*
 
 #### 05 :: Full circle quality
