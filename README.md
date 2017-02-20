@@ -3,10 +3,7 @@
 The answer to life, the universe, and everything.
 
 ## A short course on writing great software
-Software is hard but is need not be that way there are but a few core things
-that can help us write great software and deliver excellent service to our
-internal clients.  These short sessions are designed to equip you with that
-knowledge, if you already know it then no harm in a refresher.
+Software is hard but is need not be that way there are but a few core things that can help us write great software and deliver excellent service to our internal clients.  These short sessions are designed to equip you with that knowledge, if you already know it then no harm in a refresher.
 
 ## Schedule
 [https://docs.google.com/spreadsheets/d/1-A4P29n5u_iYqExKBZoyZKW61sa0wr9i935lg80HR_I](https://docs.google.com/spreadsheets/d/1-A4P29n5u_iYqExKBZoyZKW61sa0wr9i935lg80HR_I)
@@ -39,15 +36,15 @@ knowledge, if you already know it then no harm in a refresher.
 *   Fuzzing [x] 09
 *   Agile 101 [x] 15
 *   A tool does not make you agile [x] 15
-*   How to succeed as a software engineer
 *   Docker [x] 07
 *   Easy setup - it is not ok to ask me to follow a 100 step process to compile your code. [x] 11
 *   Load testing, why bother and how if i actually cared? [x] 12
+*   Community - Why you should get involved [x] 10
+*   Serverless - AWS Lambda [x] 13
+*   How to succeed as a software engineer
 *   How you use your time effectively to ensure personal and corporate technical progression?
 *   Managing your own time
 *   Credo/ethics - what we expect of you as developers
-*   Community - Why you should get involved [x] 10
-*   Serverless - AWS Lambda [x] 13
 
 ### Talks
 
