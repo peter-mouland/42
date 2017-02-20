@@ -143,5 +143,9 @@ Management doesn't start above you, it starts with you. How you manage yourself 
 #### 21 :: Accessibility
 *Sally Shepherd - Apple, MostGood Software*
 
+#### 22 :: Classical Grounding
+What things does Jon think you should have an understanding of  
+*Jon Lim*
+
 #### 23 :: Afterparty
 Drinks in the Shaftsbury
