@@ -45,7 +45,8 @@ Software is hard but is need not be that way there are but a few core things tha
 *   How you use your time effectively to ensure personal and corporate technical progression?
 *   Managing your own time
 *   Credo/ethics - what we expect of you as developers
-*   How to make things simpler. How to make software more comprehensible.
+*   How to make things simpler. 
+*   How to make software more comprehensible.
 *   How to make entire systems easily navigable.
 *   Making software better by having only ultra fast tests.
 *   Writing rigorous contract tests.
