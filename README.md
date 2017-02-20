@@ -45,6 +45,10 @@ Software is hard but is need not be that way there are but a few core things tha
 *   How you use your time effectively to ensure personal and corporate technical progression?
 *   Managing your own time
 *   Credo/ethics - what we expect of you as developers
+*   How to make things simpler. How to make software more comprehensible.
+*   How to make entire systems easily navigable.
+*   Making software better by having only ultra fast tests.
+*   Writing rigorous contract tests.
 
 ### Talks
 
@@ -101,7 +105,7 @@ To be announced.
 *Danilo Poccia - Author of AWS Lambda in Action, Technical evangelist at Amazon*
 
 #### 14 :: Architectural patterns for microservice development
-This session explains the common patterns used in microservice development including asynchronous processing and event driven systems.  We will understand why Microservices has come into existence by examining some of the problems of the past
+This session explains the common patterns used in microservice development including asynchronous processing and event driven systems.  We will understand why Microservices has come into existence by examining some of the problems of the past.  
 *Jonathan Coltman*
 
 #### 15 :: Agile 101
