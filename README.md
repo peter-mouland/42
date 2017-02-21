@@ -14,40 +14,6 @@ Software is hard but is need not be that way there are but a few core things tha
 *   Stickers
 *   Organise recording facilities - Hangouts live?
 
-### Topics
-*   Managing upwards - Finding the balance between quality and delivery (DK) [x] 01
-*   Microservices - Why? [x] 14
-*   Architectural patterns [x] 14
-*   Asynchronous workflow [x] 14
-*   All clients are idiots, or are they - Understanding others problems? [x] 06
-*   Soft skills [x] 06
-*   Breaking out a service [x] 16
-*   23 Essential design patterns you will mostly never use [x] 02
-*   Naming conventions and clean code [x] 03
-*   Coding standards [x] 03
-*   Refactoring [x] 03
-*   Solid and why it matters [x] 03
-*   Web 101, Critical render path, speed and performance [x] 04
-*   Full circle quality [x] 05
-*   Secure application development [x] 09
-*   Static code analysis [x] 09
-*   Fuzzing [x] 09
-*   Agile 101 [x] 15
-*   A tool does not make you agile [x] 15
-*   Docker [x] 07
-*   Easy setup - it is not ok to ask me to follow a 100 step process to compile your code. [x] 11
-*   Load testing, why bother and how if i actually cared? [x] 12
-*   Community - Why you should get involved [x] 10
-*   Serverless - AWS Lambda [x] 13
-*   How to succeed as a software engineer [x]
-*   How you use your time effectively to ensure personal and corporate technical progression? [x]
-*   Managing your own time [x]
-*   Credo/ethics - what we expect of you as developers [x] 19
-*   Making software better by having only ultra fast tests. [x] 18
-*   Event driven development [x] 17
-*   Accessibility in programming [x] 19
-*   Writing software well [x] 24
-
 ### Tracks
 *   General
 *   Soft skills
@@ -144,7 +110,7 @@ What things does Jon think you should have an understanding of
 *Jon Lim*
 
 ### 23 :: Cross-Origin Resource Sharing (CORS). Why do we need it and how do we do it
-Making requests in your browser to other domains can be very useful, but also dangerous in terms of security. Cross-Origin Resource Sharing helps keeps our clients protected. We'll be looking at how it works in different use-cases and how to implement CORS safely. Having CORS enabled does not necessarily mean you are providing protection. 
+Making requests in your browser to other domains can be very useful, but also dangerous in terms of security. Cross-Origin Resource Sharing helps keeps our clients protected. We'll be looking at how it works in different use-cases and how to implement CORS safely. Having CORS enabled does not necessarily mean you are providing protection.
 
 #### 24 :: Afterparty
 Drinks in the Shaftsbury
