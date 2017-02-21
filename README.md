@@ -75,7 +75,7 @@ To be announced.
 *Danilo Poccia - Author of AWS Lambda in Action, Technical evangelist at Amazon*
 
 #### 14 :: Architectural patterns for microservice development
-This session explains the common patterns used in microservice development including asynchronous processing and event driven systems.  We will understand why Microservices has come into existence by examining some of the problems of the past.   
+This session explains the common patterns used in microservice development including asynchronous processing and event driven systems.  We will understand why Microservices has come into existence by examining some of the problems of the past.  
 *Jonathan Coltman*
 
 #### 15 :: Agile 101
@@ -83,11 +83,11 @@ What does it mean to be Agile? First we will take a look at the why the agile ma
 *Nic Jackson - Chris Caswell*
 
 #### 16 :: Breaking down the monolith
-Microservices patterns are awesome however we rarely find that we can develop on green-field applications and often face the trouble of integrating into an existing system.  This talk will teach you the principles of how to identify a seam to remove code from a monolith into a service as well as looking at how new functionality based in a microservice can be implemented.   
+Microservices patterns are awesome however we rarely find that we can develop on green-field applications and often face the trouble of integrating into an existing system.  This talk will teach you the principles of how to identify a seam to remove code from a monolith into a service as well as looking at how new functionality based in a microservice can be implemented.  
 *Jon Lim, Mazin Power*
 
 #### 17 :: Event Driven development
-A look at how we can use FaaS + Aggregate data stores, and event sourcing patterns.   
+A look at how we can use FaaS + Aggregate data stores, and event sourcing patterns.  
 *Jon Coltman*
 
 #### 18 :: All The 3D Maths You Will Ever Need
@@ -99,7 +99,7 @@ To quote the President of Starfleet: "Just because you can do a thing, it does n
 *Rob Stearn*
 
 #### 20 :: The Corporation of You, managing being managed as a developer
-Management doesn't start above you, it starts with you. How you manage yourself is the only way you'll move forward.   
+Management doesn't start above you, it starts with you. How you manage yourself is the only way you'll move forward.  
 *Rob Stearn*
 
 #### 21 :: Accessibility
@@ -109,12 +109,12 @@ Management doesn't start above you, it starts with you. How you manage yourself 
 What things does Jon think you should have an understanding of  
 *Jon Lim*
 
-### 23 :: Cross-Origin Resource Sharing (CORS). Why do we need it and how do we do it
-Making requests in your browser to other domains can be very useful, but also dangerous in terms of security. Cross-Origin Resource Sharing helps keeps our clients protected. We'll be looking at how it works in different use-cases and how to implement CORS safely. Having CORS enabled does not necessarily mean you are providing protection.
+#### 23 :: Cross-Origin Resource Sharing (CORS). Why do we need it and how do we do it  
+Making requests in your browser to other domains can be very useful, but also dangerous in terms of security. Cross-Origin Resource Sharing helps keeps our clients protected. We'll be looking at how it works in different use-cases and how to implement CORS safely. Having CORS enabled does not necessarily mean you are providing protection.  
 
-#### 24 :: Afterparty
-Drinks in the Shaftsbury
-
-### 24 :: Writing Software Well: An introduction to DDD and CQRS
+#### 24 :: Writing Software Well: An introduction to DDD and CQRS
 Software development is a relatively young industry, and many are still arguing about the best way to write complex applications well. Producing maintainable, adaptable and elegant software remains an elusive goal to many developers. In this talk I will provide an introduction to what many consider to be our best methodology yet: Domain-Driven Design. Building on the concepts of DDD, we'll discuss why MVC is a terrible pattern for non-trivial applications, and talk through an alternative pattern: Event sourcing and CQRS. By the end of this talk you will want to write better software, and have some idea of how to actually do it.
 *Paul Robinson*
+
+#### 33 :: Afterparty
+Drinks in the Shaftsbury
