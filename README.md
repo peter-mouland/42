@@ -51,6 +51,7 @@ Software is hard but is need not be that way there are but a few core things tha
 *   Writing rigorous contract tests.
 *   Event driven development [x] 17
 *   Accessibility in programming [x] 19
+*   Cross-Origin Resource Sharing (CORS). Why do we need it and how do we do it.
 
 ### Tracks
 *   General
