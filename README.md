@@ -28,7 +28,6 @@ Software is hard but is need not be that way there are but a few core things tha
 *   Refactoring [x] 03
 *   Solid and why it matters [x] 03
 *   Web 101, Critical render path, speed and performance [x] 04
-*   Application Lifecycle management
 *   Full circle quality [x] 05
 *   Secure application development [x] 09
 *   Static code analysis [x] 09
@@ -44,11 +43,7 @@ Software is hard but is need not be that way there are but a few core things tha
 *   How you use your time effectively to ensure personal and corporate technical progression? [x]
 *   Managing your own time [x]
 *   Credo/ethics - what we expect of you as developers [x] 19
-*   How to make things simpler.
-*   How to make software more comprehensible.
-*   How to make entire systems easily navigable.
 *   Making software better by having only ultra fast tests. [x] 18
-*   Writing rigorous contract tests.
 *   Event driven development [x] 17
 *   Accessibility in programming [x] 19
 *   Writing software well [x] 24
@@ -148,7 +143,10 @@ Management doesn't start above you, it starts with you. How you manage yourself 
 What things does Jon think you should have an understanding of  
 *Jon Lim*
 
-#### 23 :: Afterparty
+### 23 :: Cross-Origin Resource Sharing (CORS). Why do we need it and how do we do it
+Making requests in your browser to other domains can be very useful, but also dangerous in terms of security. Cross-Origin Resource Sharing helps keeps our clients protected. We'll be looking at how it works in different use-cases and how to implement CORS safely. Having CORS enabled does not necessarily mean you are providing protection. 
+
+#### 24 :: Afterparty
 Drinks in the Shaftsbury
 
 ### 24 :: Writing Software Well: An introduction to DDD and CQRS
