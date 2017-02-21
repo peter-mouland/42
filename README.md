@@ -116,6 +116,7 @@ What things does Jon think you should have an understanding of
 
 #### 23 :: Cross-Origin Resource Sharing (CORS). Why do we need it and how do we do it  
 Making requests in your browser to other domains can be very useful, but also dangerous in terms of security. Cross-Origin Resource Sharing helps keeps our clients protected. We'll be looking at how it works in different use-cases and how to implement CORS safely. Having CORS enabled does not necessarily mean you are providing protection.  
+*Chris Mckenzie*
 
 #### 24 :: Writing Software Well: An introduction to DDD and CQRS
 Software development is a relatively young industry, and many are still arguing about the best way to write complex applications well. Producing maintainable, adaptable and elegant software remains an elusive goal to many developers. In this talk I will provide an introduction to what many consider to be our best methodology yet: Domain-Driven Design. Building on the concepts of DDD, we'll discuss why MVC is a terrible pattern for non-trivial applications, and talk through an alternative pattern: Event sourcing and CQRS. By the end of this talk you will want to write better software, and have some idea of how to actually do it.
