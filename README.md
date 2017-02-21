@@ -51,6 +51,7 @@ Software is hard but is need not be that way there are but a few core things tha
 *   Writing rigorous contract tests.
 *   Event driven development [x] 17
 *   Accessibility in programming [x] 19
+*   Writing software well [x] 24
 
 ### Tracks
 *   General
@@ -104,8 +105,8 @@ In this talk you will learn why you should get involved with the community and t
 Why it is important to make your project easy to setup, in this talk you will learn some practical advice how you can use docker to create reproducible builds.  
 *David Kelly*
 
-#### 12 :: Load testing - Why bother and how if i actually cared?
-This talk covers why load testing is important how often you should do it and a short tutorial on how to do it and what those charts actually mean.  
+#### 12 :: Making Code Fly: Load Testing Web Applications
+"No battle plan survives contact with the enemy", they say. Likewise, popular web application often need optimisation when they encounter real World traffic. Being able to identify & fix performance bottlenecks in our running applications is a critical skill of any modern software engineer, and is a cornerstone of Site Reliability Engineering. In this talk I'll go through why performance is the job of a developer, how to test web application stacks, what tools exist to monitor production performance, how to identify the effect of bottlenecks (and their possible causes!). Finally, I'll talk about what options a developer can take to improve performance. This will be a whistle-stop tour but the extensive supporting notes will help you as you go about trying to conquer the World.
 *Paul Robinson*
 
 #### 13 :: Serverless
@@ -149,3 +150,7 @@ What things does Jon think you should have an understanding of
 
 #### 23 :: Afterparty
 Drinks in the Shaftsbury
+
+### 24 :: Writing Software Well: An introduction to DDD and CQRS
+Software development is a relatively young industry, and many are still arguing about the best way to write complex applications well. Producing maintainable, adaptable and elegant software remains an elusive goal to many developers. In this talk I will provide an introduction to what many consider to be our best methodology yet: Domain-Driven Design. Building on the concepts of DDD, we'll discuss why MVC is a terrible pattern for non-trivial applications, and talk through an alternative pattern: Event sourcing and CQRS. By the end of this talk you will want to write better software, and have some idea of how to actually do it.
+*Paul Robinson*
