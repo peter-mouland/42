@@ -1,4 +1,4 @@
-# 42
+f# 42
 The answer to life, the universe, and everything.
 
 ## A short course on writing great software
@@ -64,7 +64,12 @@ In this talk you will learn why you should get involved with the community and t
 
 #### 11 :: Easy setup - it is not ok to ask me to follow a 100 step process to compile your code
 Why it is important to make your project easy to setup, in this talk you will learn some practical advice how you can use docker to create reproducible builds.  
-*David Kelly*
+*David Kelley*
+
+#### 11 :: [Portable, painless project setup with Docker Compose](/11/README.md)
+*David Kelley*
+
+Setting up a project needs to be fast and most importantly, easy. Seriously, like, one `$> command`. This talk will cover the barriers and pitfalls of a difficult, complicated setup. As well as how setting up and using Docker Compose in a number of ways, will leave you feeling as fresh as a daisy when working with yours and other's projects.
 
 #### 12 :: Making Code Fly: Load Testing Web Applications
 "No battle plan survives contact with the enemy", they say. Likewise, popular web application often need optimisation when they encounter real World traffic. Being able to identify & fix performance bottlenecks in our running applications is a critical skill of any modern software engineer, and is a cornerstone of Site Reliability Engineering. In this talk I'll go through why performance is the job of a developer, how to test web application stacks, what tools exist to monitor production performance, how to identify the effect of bottlenecks (and their possible causes!). Finally, I'll talk about what options a developer can take to improve performance. This will be a whistle-stop tour but the extensive supporting notes will help you as you go about trying to conquer the World.
