@@ -33,8 +33,8 @@ A look at the most common design patterns from the Gang of 4 design patterns boo
 How code should read like a novel, a retrospective analysis of Bob Martins seminal work.  
 *Jon Lim*
 
-#### 04 :: Web 101, Critical render path, speed and performance
-How the web browser works and the importance of order when creating web front-ends.  How to integrate content when using a CDN.  
+#### 04 :: Web 101, critical render path, speed and performance
+How the web browser works and optimising the critical rendering path.
 *Rob Jones*
 
 #### 05 :: Full circle quality
