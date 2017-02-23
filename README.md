@@ -122,10 +122,10 @@ Making requests in your browser to other domains can be very useful, but also da
 Software development is a relatively young industry, and many are still arguing about the best way to write complex applications well. Producing maintainable, adaptable and elegant software remains an elusive goal to many developers. In this talk I will provide an introduction to what many consider to be our best methodology yet: Domain-Driven Design. Building on the concepts of DDD, we'll discuss why MVC is a terrible pattern for non-trivial applications, and talk through an alternative pattern: Event sourcing and CQRS. By the end of this talk you will want to write better software, and have some idea of how to actually do it.
 *Paul Robinson*
 
-### 25 :: How good dependency management can make your tests faster
+#### 25 :: How good dependency management can make your tests faster
 We've all heard the buzzwords: SOLID, high cohesion, loose coupling, dependency inversion (and injection)... In this talk we'll get down to the real world and see how good use of some of these concepts can make our lives as developers easier. Because if there's something you can't escape, that's writing tests for your code. If you can write those tests in an easier way, and you can run them faster, you'll become a better developer.
 
-### 26 :: Give Go a go
+#### 26 :: Give Go a go
 Go programming language has been around for a little more than 7 years now, some have never tried it, some tried it and haven't actually start to appreciate it. In this talk, I want to help both group to understand what the language is and some of the common misunderstandings. You’d understand why the language is not “Go-ing” anywhere provided with how the industry has taken it to the heart. In addition of this, you’ll walk away knowing that the Go community is the best and you’ll be missing out if you don’t give Go a go.
 *Eggya Chiquita*
 
