@@ -7,8 +7,8 @@ WWG, GoBridge, Code:Bar and many more organisations out there helps foster diver
 
 ## Bio
 ### Eggya Chiquita
-Software Engineer at Notonthehighstreet
-Co-Organizer WWG London
+ * Software Engineer at Notonthehighstreet
+ * Co-Organizer WWG London
 
 ## Content
 TBD
