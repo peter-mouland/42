@@ -122,5 +122,8 @@ Making requests in your browser to other domains can be very useful, but also da
 Software development is a relatively young industry, and many are still arguing about the best way to write complex applications well. Producing maintainable, adaptable and elegant software remains an elusive goal to many developers. In this talk I will provide an introduction to what many consider to be our best methodology yet: Domain-Driven Design. Building on the concepts of DDD, we'll discuss why MVC is a terrible pattern for non-trivial applications, and talk through an alternative pattern: Event sourcing and CQRS. By the end of this talk you will want to write better software, and have some idea of how to actually do it.
 *Paul Robinson*
 
+### 25 :: How good dependency management can make your tests faster
+We've all heard the buzzwords: SOLID, high cohesion, loose coupling, dependency inversion (and injection)... In this talk we'll get down to the real world and see how good use of some of these concepts can make our lives as developers easier. Because if there's something you can't escape, that's writing tests for your code. If you can write those tests in an easier way, and you can run them faster, you'll become a better developer.
+
 #### 33 :: Afterparty
 Drinks in the Shaftsbury
