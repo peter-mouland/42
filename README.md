@@ -125,5 +125,9 @@ Software development is a relatively young industry, and many are still arguing 
 ### 25 :: How good dependency management can make your tests faster
 We've all heard the buzzwords: SOLID, high cohesion, loose coupling, dependency inversion (and injection)... In this talk we'll get down to the real world and see how good use of some of these concepts can make our lives as developers easier. Because if there's something you can't escape, that's writing tests for your code. If you can write those tests in an easier way, and you can run them faster, you'll become a better developer.
 
+### 26 :: Give Go a go
+Go programming language has been around for a little more than 7 years now, some have never tried it, some tried it and haven't actually start to appreciate it. In this talk, I want to help both group to understand what the language is and some of the common misunderstandings. You’d understand why the language is not “Go-ing” anywhere provided with how the industry has taken it to the heart. In addition of this, you’ll walk away knowing that the Go community is the best and you’ll be missing out if you don’t give Go a go.
+*Eggya Chiquita*
+
 #### 33 :: Afterparty
 Drinks in the Shaftsbury
