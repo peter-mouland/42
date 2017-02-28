@@ -1,0 +1,23 @@
+# Making Code Fly: Load Testing Web Applications
+
+## Introduction
+
+The purpose of software is, ostensibly to produce useful tools. When we talk about usefulness, or its "utility", we normally talk in terms of the "stakeholders" who get those benefits, the people for whom the usefulness is delivered.
+
+These might be end-users, because they are the people for whom we built the tool. But did we actually build the tool for them, or for the people who built the tool, the people who make money from selling it or the services/products it makes available? Does the software you build benefit the shareholders you work for, the end-users, or both? In a perfect balance, it serves all, in different ways. This is a process that in Silicon Valley is known as "monetising value" - customers get the value, we get the money.
+
+Whoever we're building this software for, there are multiple things that we might measure to define how useful the tool is: the features it offers, the lack of bugs, the ability to leverage somebody's time or efforts. All noble, all of them important in their own way.
+
+But in this talk I want to consider an aspect that is often left by the way side in the rush to MVP, something we tend to patch up after the software is almost finished: performance.
+
+## Performance? Really?
+
+## What do we mean by performance generally?
+
+## What about premature optimisation?
+
+## Making performance measurement as important by tests
+
+## What do we mean by performance in a web application?
+
+## Web applications have dependencies too
