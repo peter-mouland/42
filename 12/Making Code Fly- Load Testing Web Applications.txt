@@ -12,9 +12,71 @@ But in this talk I want to consider an aspect that is often left by the way side
 
 ## Performance? Really?
 
-## What do we mean by performance generally?
+Yes, really. Think about why it matters to all the stakeholders.
+
+We can demonstrably measure that important metrics like return rates, conversion rates and user satisfaction are impacted by performance. Think about this from your own experience: how do you perceive slow applications? How about fast applications? How long will you wait before you give up?
+
+From a business owner's point of view, that obviously means performance is a key thing to manage - you can have the greatest features on Earth, but you are going to struggle to gain new users or retain your existing ones if performance is poor.
+
+In the context of Web applications though, there is another reason: the application is not running on the user's hardware that they pay for, but on your hardware, that you pay for. Slow applications are by definition more expensive to operate than fast applications.
+
+You either fix your budget and have a capacity limit, or to match your new capacity you have to scale application instances - servers, containers, pay for longer Lambda invocations if you're in the FaaS World - and therefore your profit margin is eroded.
+
+From a developer's perspective then, you could argue that it is your responsibility to drive better performance. If you don't, you are making your employer less profitable - either through lower sales, or higher operational costs - and less able to pay you.
+
+However you should care about performance anyway, if you're a professional. Anybody can write a slow algorithm, a slow application. It is the sign of somebody who is perfecting their craft that they produce the same functionality as the slow application, but to do so in a way that lowers operational cost and increases customer satisfaction.
+
+In the same way that professional software crafts people now believe that test coverage is important, I would argue that performance testing is now there at the same level of importance. In fact, it may even be more important: a customer might allow a bug that does not stop them from using the application as easily as they could, but few will suffer a slow application for very long.
 
 ## What about premature optimisation?
+
+Most people when I start talking about this quote back to me the phrase "premature optimisation is the root of all evil". 
+
+I bet 99% of people who use that phrase don't know who originally came up with that line, or in what context.
+
+It was Donald Knuth, in a paper entitled "Structured Programming With Goto Statements". It's an interesting paper by the way, because in it he argues that use of goto statements might not be "considered harmful" - an assertion of Djikstra's that many people have heard, but again, never read the original context of - but in one section he writes something quite pertinent:
+
+> "Programmers waste enormous amounts of time thinking about, or worrying about, the speed of noncritical parts of their programs, and these attempts at efficiency actually have a strong negative impact when debugging and maintenance are considered. We should forget about small efficiencies, say about 97% of the time: premature optimization is the root of all evil. Yet we should not pass up our opportunities in that critical 3%."
+
+[1] http://wiki.c2.com/?PrematureOptimization
+[2] https://www.cs.sjsu.edu/~mak/CS185C/KnuthStructuredProgrammingGoTo.pdf
+
+Note the caveat. He says optimising in the 97% of non-critical code is wasteful, but we should focus our efforts on the critical 3%.
+
+You might wonder about how he came up with such a specific number. Was it guess work? A hunch? Or did he have evidence. Well, in the context of the quote he was looking at an example piece of code that uses an inner loop in which most of the work is done by a program. He reasoned that about 3% of the source code text was made up by this loop, but this loop was responsible for nearly 100% of the application performance. You made a 10% gain in this loop, you made a 10% gain for the entire application.
+
+Critically, the examples he cited were not IO-bound. He was trying to find an optimisation for memory usage and CPU cycles, and what he was arguing for is optimising in that critical 3% of the source text was of considerable more advantage than optimising in the other 97%.
+
+The next paragraph in that paper is interesting. He says:
+
+> A good programmer will not be lulled into complacency [...] he will be wise to look at the critical code; but only _after_ that code has been identified. It is often a mistake to make a priori judgements about what parts of a program are really critical, since the universal experience of programmers who have been using measurement tools has been that that their intuitive guesses fail.
+
+It's worth noting he wrote this in December 1974. That's just 2 years after the first public demonstrations of what we now call "The Internet". He was thinking specifically in terms of the problems which is he was then working on - that everybody was working on - that in the web application World we would at best perhaps consider "batch processing".
+
+In other words, the class of problems in which Knuth was asserting "premature optimisation is the root of all evil" is not the same class of problems we deal with as web application developers:
+
+1. We are IO-bound. It's just the IO is the network.
+2. Every request/response cycle is in essence "the inner loop" that makes up 97% of the application performance.
+
+Of course there are exceptions. Much of what is written in the web performance World is about being able to optimise your web server. Whilst fine for static web sites - responding to request/response cycles with static content means this is "the inner loop" - for most web applications, it is your application that is central to performance.
+
+And of course, following that on, you might find that on analysis there are parts of your code that are taking up more time than others. It could be your "inner loop" is any one of the following:
+
+* Parsing and validating user input
+* Constructing and executing lookups in data stores (e.g. SQL)
+* Parsing the output of those lookups
+* Cache management/invalidation - I have seen parts of applications that spends more time calculating cache keys than they do anything else in the request
+* Rendering a result into JSON or HTML
+
+Each of these may deserve attention. You should, as a professional, care about identifying performance bottlenecks in each of these scenarios and reducing their impact as early as possible.
+
+But remember: Knuth said optimisation should occur once identified. You should attempt identification at development time if you can, but it may be that identifying the real time hogs is only possible once the code has met production traffic.
+
+## Traditional ways of measuring web application performance
+
+Most Application Performance Management (APM) texts see the world of performance breaking down into a few key areas:
+
+
 
 ## Making performance measurement as important by tests
 
