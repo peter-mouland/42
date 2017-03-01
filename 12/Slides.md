@@ -5,161 +5,196 @@
 # Making Code Fly: Load Testing Web Applications
 
 ## Paul Robinson
+### Senior Software Engineer - notonthehighstreet.com
 
 --- 
 
-# Agenda
-
-* Why do we care about application performance?
-* What can we measure?
-* How do we measure it?
-* When should we load test our branches/changes?
-* How do we actually test it?
-* How do we interpret the results?
+# What is the purpose of the software we write?
 
 ---
 
-# What can we measure?
+# Utility
 
-There are multiple things we could performance benchmark:
+* End users/customers
+	* The people we build the tools for (maybe)
+	* Being able to acheive their goal
+* Business owners
+	* "Monetising value"
 
-* Background job processing time
-* Eventual consistency lag
-* Transactional load (people changing things)
-* Non-transactional load (people looking at things)
-
----
-
-# Why do we care?
-
-Every request must reach a service, be processed, a response generated and returned to the client. Whilst a thread of execution is running, no other requests can be processed by that thread.
-
-The time that the thread is blocked determines how many requests an individual thread can service.
+Things they care about can include:
+* Ease of use
+* Features
+* Code quality/lack of bugs
 
 ---
 
-# Why do we care?
+# Performance?
 
-In other words:
+It matters to customers because we can prove it:
+* Higher conversion
+* Higher return rates
+* Valued more than slower competitors
 
-$$
-floor(NumThreads\frac{1000}{Avg Resp Ms}) = Capacity
-$$
+It matters to business owners because we can prove it:
+* All of the customer value
+* On the web, the code is not running on customer's hardware, but on the business owner's
 
----
-
-# Why do we care?
-
-Let's suppose we expect an application to handle a target capacity. How many instances do we need?
-
-$$
-ceil(\frac{TargetRequests}{Capacity}) = NumAppInstances
-$$
+It should matter to a developer **because otherwise we are making our product less viable, and we will be fired**
 
 ---
 
-# Why do we care?
+# "Premature optimisation is the root of all evil"
 
-What do we do if we can't spin up enough instances?
-
-Reason for that might include:
-
-* Budget
-* Ability to get more slaves from AWS
-* Resource contention leading to runaway response times
-* ...
+Who said this?
 
 ---
 
-# Why do we care?
-
-If we combine our formulas so far into one formula:
-
-$$
-ceil(\frac{TargetRequests}{floor(NumThreads\frac{1000}{AvgRespMs}) }) = NumAppInstances
-$$
-
-I can reduce the number of instances needed for a given capacity by moving one number: 
-
-$$AvgRespMs$$
+> "Programmers waste enormous amounts of time thinking about, or worrying about, the speed of noncritical parts of their programs, and these attempts at efficiency actually have a strong negative impact when debugging and maintenance are considered. We should forget about small efficiencies, say about 97% of the time: premature optimization is the root of all evil. Yet we should not pass up our opportunities in that critical 3%."
+> 
+-- Donald Knuth, "Structured Programming With Goto Statements", 1974
 
 ---
 
-# Why do we care?
-
-## Response time is a contributor to cost, and our ability to respond to demand
-
-It's also good for consumers - lower response times have been shown to lead to higher conversion rates and return rates.
+# Why 3%?
 
 ---
 
-# Asynchronous work
-
-Asynchronous/background workers normally work down a queue. Therefore another choice is open to us:
-
-**Don't scale. Just accept queues will grow and work down eventually**
-
-How do you know if this is acceptable?
-
-$$
-\frac{JobsAddedPer}{JobsProcessedPer} = AvergageGrowth
-$$
-
-If this number is > 1.0, your queue will only ever grow and __you are in a death spiral__.
-
---- 
-
-# How do we measure it?
-
-For consumer-facing, non-transactional load:
-
-* New Relic is a good start
-* We can bake in metrics to go to statsd or Datadog
-* Many other alternatives.
+> A good programmer will not be lulled into complacency [...] he will be wise to look at the critical code; but only _after_ that code has been identified. It is often a mistake to make a priori judgements about what parts of a program are really critical, since the universal experience of programmers who have been using measurement tools has been that that their intuitive guesses fail.
+> 
+-- Donald Knuth, "Structured Programming With Goto Statements", 1974
 
 ---
 
-# How do we measure it?
+# The Web is different
 
-There are however, downstream dependencies.
-
-* Persistent data stores
-* Cache servers
-* Other applications (fan-out architecture)
+1. We are quite often IO-bound, and our performance is basically a measure of responding to every input with the correct output as quickly as mechanically possible
+2. Every request/response cycle is in essence "the inner loop" that makes up the majority of the application performance that we care about.
 
 ---
 
-# When should we test our changes?
+# What might our "inner loop" be?
 
-In an ideal world, every branch would be performance tested.
-
-Good candidates for manual testing:
-
-* Your code will be called frequently
-* Your code is making more use of an external resource
-* You suspect what you're doing will slow it down
-* You aren't sure of the answers to the above so want some confidence
+* Parsing and validating user input
+* Constructing and executing lookups in data stores (e.g. SQL)
+* Parsing the output of those lookups
+* Cache management/invalidation - I have seen parts of applications that spends more time calculating cache keys than they do anything else in the request
+* Rendering a result into JSON or HTML
 
 ---
 
-# When should we test our changes?
+# APM
 
-Even if you don't test code in advance, you should be checking your metrics daily and comparing with past performance. 
-
-Any degradation should be communicated and mitigated quickly.
-
-If you have request/response cycles regularly taking > 50ms you can argue you have broken code.
-
----
-
-# How do we actually test changes?
-
-There are three tools in our armoury:
-
-1. Flood.io
-2. Sampling GA data
-3. QA environments and Staging environments
+* End user experience monitoring – (active and passive)
+* Application runtime architecture discovery and modelling
+* User-defined transaction profiling (also called business transaction management)
+* Application component monitoring
+* Reporting & Application data analytics
 
 ---
 
-# How do we interpret the results?
+![bg original 50%](images/newrelic-homepage.png)
+
+---
+
+# An example
+
+![](images/ga-bf.png)
+![](images/nr-bf.png)
+
+---
+
+# What are we looking at?
+
+1. A customer's web browser will look up the DNS records for the domain.
+2. load balancer -> an internal gateway service -> routes traffic to an application instance
+3. The application looks at request, and determines which piece of code needs to be executed
+4. If that code has some cacheable components, cache keys are calculated, and a cache lookup is made.
+5. On a cache miss, we go and talk to the data stores, run some business logic, do whatever the request is meant to do
+6. Build a response in HTML/JSON/XML
+7. Optionally populate caches so the next request can skip steps 5 and/or 6 next time
+8. Throw that response back to the user's client
+
+---
+
+# External dependencies
+
+Caching is not the answer:
+
+1. Cache keys can be expensive to calculate
+2. Your cache might not be as fast as you think
+
+---
+
+# Memcache contention
+
+![](images/dd-memcache-contention.png)
+
+---
+
+# Network contention - enough instances?
+
+![](images/dd-conns-waiting.png)
+
+---
+
+# Load Testing
+
+## Do you need a production like environment?
+
+Yes, but maybe not.
+
+---
+
+![](images/newrelic-staging.png)
+
+---
+
+# Getting produciton traffic
+
+* Google Analytics (via API)
+* Server logs
+* Making it up?
+
+The important thing is it should be representative if possible
+
+---
+
+# Running Load tests
+
+* JMeter
+* Flood.io
+* Metrics in your environment
+	* New Relic
+	* Datadog
+	* ...
+
+It's critical to be able to compare your test results to your production data in a way that is meaningful
+
+---
+
+# Hang on, can't I just use a CDN?
+
+### No. Well, maybe.
+
+---
+
+# Testing CDNs is hard
+
+* DNS lookups will cluster based on geo of grid
+* It doesn't tell you about application performance really
+* We can get strange results
+
+---
+
+# Summary
+
+* Performance optimisation is not evil - your job relies on it
+* New Relic & Datadog
+* You don't need perfect production clones to get meaningful results
+* Get real traffic profiles
+* JMeter & Flood.io
+* CDNs are not magic
+
+---
+
+# Thank you
