@@ -129,5 +129,9 @@ We've all heard the buzzwords: SOLID, high cohesion, loose coupling, dependency 
 Go programming language has been around for a little more than 7 years now, some have never tried it, some tried it and haven't actually start to appreciate it. In this talk, I want to help both group to understand what the language is and some of the common misunderstandings. You’d understand why the language is not “Go-ing” anywhere provided with how the industry has taken it to the heart. In addition of this, you’ll walk away knowing that the Go community is the best and you’ll be missing out if you don’t give Go a go.
 *Eggya Chiquita*
 
+#### 27 :: Data Science for Geeks
+Data science is one of the biggest buzzwords of the past few years, but it has years of research and understanding behind it and has many practical applications. In this talk, I'll explain what data science is and how you can use it to do cool stuff. 
+*Allan Whatmough*
+
 #### 33 :: Afterparty
 Drinks in the Shaftsbury

@@ -1,0 +1,4 @@
+#### 12 :: Making Code Fly: Load Testing Web Applications
+"No battle plan survives contact with the enemy", they say. Likewise, popular web application often need optimisation when they encounter real World traffic. Being able to identify & fix performance bottlenecks in our running applications is a critical skill of any modern software engineer, and is a cornerstone of Site Reliability Engineering. In this talk I'll go through why performance is the job of a developer, how to test web application stacks, what tools exist to monitor production performance, how to identify the effect of bottlenecks (and their possible causes!). Finally, I'll talk about what options a developer can take to improve performance. This will be a whistle-stop tour but the extensive supporting notes will help you as you go about trying to conquer the World.
+*Paul Robinson*
+
