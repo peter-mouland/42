@@ -196,6 +196,8 @@ The problem was simply that the user nginx runs as (www-data in this case) could
  <asciinema-player src="njinxed.json"></asciinema-player>
    <script src="asciinema-player.js"></script>
 <aside>
+Back up link in case this is a PDF: https://operationnotpermitted.com/static/njinxed.html
+
 This vulnerability was found and POC written by Dawid Golunksi of legalhackers.com.
 We copy /bin/bash to /tmp and compile a shared library to chown our tmp bash to root and setuid.
 delete the error log and symlink it to ld.preload.so. Logrotate kicks in around 6 am and reloads nginx after rotating the logs. 
