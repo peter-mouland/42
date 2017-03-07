@@ -11,8 +11,8 @@ aside {
     font-size: 12px;
     line-height: 15px;
     background-color: #EFEFEF;
-    display: none;
     position: absolute;
+    display: none;
     bottom: 15px;
 }
 </style>
@@ -26,6 +26,23 @@ aside {
 We'll be exploring some of the principles of Secure Application Development over the next 30 minutes.
 ## Andrew Millar
 ### Information Security Specialist
+
+<img src="images/logo.png" style="position:absolute; right: -60px; top: 480px; height: 100px;">
+
+<aside>
+Andrew is away but will be presenting this talk telepathically. Anyone who believes in telepathy and telekinses, raise my hand!
+</aside>
+
+---
+# Application Security
+
+## Abstract
+
+We'll be exploring some of the principles of Secure Application Development over the next 30 minutes.
+## ~~Andrew Millar~~
+### ~~Information Security Specialist~~
+## Nic Jackson
+### Java developer ;-)
 
 <img src="images/logo.png" style="position:absolute; right: -60px; top: 480px; height: 100px;">
 
@@ -138,7 +155,7 @@ Information Security is founded on three basic premises, does anyone know what t
 * **A**vailability - ensuring systems and data are available to authorized users when they need it
  
 <aside>
-Availability is often not seen as a security concern, but it really is. As a specific example, OCSP (Online Certificate Status Protocol) is the replacement for Certificate Revocation Lists which grew too large to be of any use - by the time you finished downloading a CRL, it was out of date. OCSP allows for example, browsers to check if a certificate is still valid or not. If the OCSP service is unavailable, the browser can't be sure if the cert is trustworthy. What happens then? Does it continue anyway with a potentially compromised certificate, or does it fail hard and deny service to the user. Most browsers do the former.
+Availability is often not seen as a security concern, but it really is. As a specific example, OCSP (Online Certificate Status Protocol) is the replacement for Certificate Revocation Lists which grew too large to be of any use - by the time you finished downloading a CRL, it was out of date. OCSP allows for example, browsers to check if a certificate is still trustworthy or not. If the OCSP service is unavailable, the browser can't be sure if the cert is trustworthy. What happens then? Does it continue anyway with a potentially compromised certificate, or does it fail hard and deny service to the user. Most browsers do the former.
 
 In a much more general sense, the security of a business depends on its systems being available. The future of an ecommerce site for example, will not be very certain if its systems are down and customer can't buy things.
 </aside>
@@ -196,7 +213,7 @@ The problem was simply that the user nginx runs as (www-data in this case) could
  <asciinema-player src="njinxed.json"></asciinema-player>
    <script src="asciinema-player.js"></script>
 <aside>
-Back up link in case this is a PDF: https://operationnotpermitted.com/static/njinxed.html
+Back up PoC link: https://operationnotpermitted.com/static/njinxed.html
 
 This vulnerability was found and POC written by Dawid Golunksi of legalhackers.com.
 We copy /bin/bash to /tmp and compile a shared library to chown our tmp bash to root and setuid.
@@ -233,7 +250,7 @@ The default experience of a system should be secure and it should be up to the u
 ---
 # Protecting the Foundation
 <aside>
-The default experience of a system should be secure and it should be up to the user to reduce their security (if they're allowed to that is)
+Apps fail and bork all the time, but _how_ they fail can affect whether an application is secure or not. Take the following example:
 </aside>
 
 * Minimize attack surface area
@@ -244,7 +261,7 @@ The default experience of a system should be secure and it should be up to the u
 <img src="images/logo.png" style="position:absolute; right: -60px; top: 430px; height: 100px;">
 
 ---
-# Fail Securely example
+# Fail Securely Fail
 ### Stolen from OWASP
 
 <link rel="stylesheet" type="text/css" href="prism.css" />
@@ -274,8 +291,6 @@ Fairly self-explanatory.
 Certain roles have different levels of trust than normal users. In particular, administrators are different to normal users. In general, administrators should not be users of the application.
 
 For example, an administrator should be able to turn the system on or off, set password policy but shouldn’t be able to log on to the storefront as a super privileged user, such as being able to “buy” goods on behalf of other users.
-
-
 </aside>
 
 * Minimize attack surface area
@@ -326,18 +341,57 @@ Answers:
 * Who
 * What
 * When
-* How
 * Why
+* How
 
 <img src="images/logo.png" style="position:absolute; right: -60px; top: 465px; height: 100px;">
 
 ----
 # Audit Fail
 
+<aside>
+This is an example of an authentication failure log message from an app at a previous exmployer. It isn't much use - which user failed authentication?!
+</aside>
 ```plain
 Aug 18 11:00:57 [AuthController] Authentication failed.
 ```
 <img src="images/logo.png" style="position:absolute; right: -60px; top: 345px; height: 100px;">
+
+----
+# Audit Win
+
+<aside>
+If we reworded the log message to answer the Who What When Why and where applicable, the How, we get the full picture of what happened. Including contextual information such as URL and referer is also very useful.
+</aside>
+```plain
+Aug 18 11:00:57 [AuthController] Authentication failure 
+for andrww@example.com by 127.0.0.1 - user unknown - 
+/user/login /user/myaccount
+Aug 18 11:01:18 [AuthController] Authentication failure 
+for andrew@example.com by 127.0.0.1 - invalid password - 
+/user/login?err=1 /user/login
+Aug 18 11:02:01 [AuthController] Authentication failure 
+for andrew@example.com by 127.0.0.1 - incorrect 2FA code 
+- /user/login?err=2 /user/login
+```
+<img src="images/logo.png" style="position:absolute; right: -60px; top: 455px; height: 100px;">
+
+---
+# To recap
+<aside>
+
+</aside>
+
+* Minimize attack surface area
+* Least Privilege
+* Defense in Depth
+* Secure Defaults
+* Fail Securely
+* Separation of duties
+* Keep it Simple
+* Maintain an audit trail
+
+<img src="images/logo.png" style="position:absolute; right: -60px; top: 500px; height: 100px;">
 
 ----
 # Audit Win
@@ -354,3 +408,53 @@ for andrew@example.com by 127.0.0.1 - incorrect 2FA code
 - /user/login?err=2 /user/login
 ```
 <img src="images/logo.png" style="position:absolute; right: -60px; top: 455px; height: 100px;">
+
+----
+# So where do I start?
+
+<aside>
+So now we know _what_ to do, **how** do we do it?
+</aside>
+
+<img src="images/logo.png" style="position:absolute; right: -60px; top: 300px; height: 100px;">
+
+----
+# So where do I start?
+
+
+Have a look at:
+* The Open Web Application Security Project - https://www.owasp.org
+* SANS - https://www.sans.org
+	Particulary their Whitepaper on a Framework for Secure Application Design and Development. It's from 2002, but the ideas are still relevent - https://www.sans.org/reading-room/whitepapers/application/framework-secure-application-design-development-842
+* Security Analysis tools in your language
+
+<img src="images/logo.png" style="position:absolute; right: -60px; top: 540px; height: 100px;">
+
+---
+#  Application Security Testing:
+<aside>
+Static analysis tools in particular are very useful as you can often integrate the into your IDE and have them run as you code!
+
+Dynamic analysis tools are usually much more involved and time consuming so I'll try to avoid listing any here
+</aside>
+
+Much like linters, there are Analysis tools for most languages
+
+For Example:
+    Ruby/Rails - [Brakeman](http://brakemanscanner.org/), [Codesake Dawn](https://rubygems.org/gems/codesake-dawn), [Space](https://people.eecs.berkeley.edu/~jnear/space/)
+    Java - [Find Security Bugs](http://find-sec-bugs.github.io/) plugin for [FindBugs](http://findbugs.sourceforge.net/), [PMD](https://pmd.github.io/), [Infer](http://fbinfer.com/)
+    PHP  - [RIPS](https://sourceforge.net/projects/rips-scanner/)
+    Javascript/Node - [scanjs plugin for eslint](https://github.com/mozfreddyb/eslint-config-scanjs), [RetireJS](https://retirejs.github.io/retire.js/)
+    C - [Infer](http://fbinfer.com/), [FlawFinder](https://www.dwheeler.com/flawfinder/)
+    Go - [SafeSQL](https://github.com/stripe/safesql), [Dingo Hunter](https://github.com/nickng/dingo-hunter), [Go StaticCheck](https://github.com/dominikh/go-staticcheck), [IeffAssign](https://github.com/gordonklaus/ineffassign)
+
+<img src="images/logo.png" style="position:absolute; right: -60px; top: 485px; height: 100px;">
+
+---
+
+# That's all for now folks!
+
+I hope this has been an interesting introduction to the concepts of Secure Application development!
+
+
+<img src="images/logo.png" style="position:absolute; right: -60px; top: 345px; height: 100px;">
