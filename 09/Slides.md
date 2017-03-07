@@ -433,7 +433,7 @@ Have a look at:
 ---
 #  Application Security Testing:
 <aside>
-Static analysis tools in particular are very useful as you can often integrate the into your IDE and have them run as you code!
+Static analysis tools are similar to linters you may already be using, except instead of highlighting syntactical issues, they flag potential security issues. They are very useful tools and you can often integrate the into your IDE and have them run as you code!
 
 Dynamic analysis tools are usually much more involved and time consuming so I'll try to avoid listing any here
 </aside>
