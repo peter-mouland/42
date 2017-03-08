@@ -1,4 +1,4 @@
-# 04 :: Web 101, critical render path, speed and performance
+# 04 :: Web 101, critical rendering path, speed and performance
 How the web browser works and optimising the critical rendering path.
 
 ## Bio
@@ -13,5 +13,5 @@ A fast webpage improves both user experience and SEO but how do you make a heavy
 # How the browser works
 # Understanding the critical rendering path
 # Optimising the critical rendering path
-# Loading Noths.com in ~1 second
+# ~1 second on 3G
 # Summary
